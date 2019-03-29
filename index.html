@@ -12,7 +12,11 @@
                     <img v-bind:src="image" alt="socks">
                 </div>
                 <div class="product-info">
-                        <h1>{{ product }}</h1>
+												<h1>{{ product }}</h1>
+												<p v-if="inventory > 20">In stock</p>
+												<p v-else-if="inventory<=20 && inventory>0"> almost sold out</p>
+												<p v-else>Out of stock</p>
+												<p v-if="onSale">On sale</p>
                 </div>
 
                    
