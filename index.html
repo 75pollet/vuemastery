@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta name= "viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Product App</title>
+    </head>
+    <body>
+      <div class="nav-bar"></div>
+        <div id="app">
+            <div class="product">
+                <div class="product-image">
+                    <img v-bind:src="image" alt="socks">
+                </div>
+                <div class="product-info">
+                        <h1>{{ product }}</h1>
+                </div>
+
+                   
+            </div>
+            <p>I'm learning vue from <a v-bind:href="link">here</a></p>
+            <p>{{ description }}</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
