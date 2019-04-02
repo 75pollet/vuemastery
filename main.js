@@ -5,7 +5,7 @@ var app = new Vue({
         description: "Footwear",
         image: "images/sock.jpeg",
         link: "https://www.vuemastery.com/courses/intro-to-vue-js/attribute-binding",
-        inventory: 10,
+        inventory: false,
         onSale: true,
         details: ["20% cotton", "30% polyester", "100% awesome"],
         variants: [
